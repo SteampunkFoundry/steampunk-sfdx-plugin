@@ -17,7 +17,7 @@ Utilities developed by Steampunk (@SteampunkFoundry)
 ### **Install as a SalesforceDX Plugin**
 
 ```bash  
-sfdx plugins:install steampunk-sfdx-plugin
+sfdx plugins:install @steampunk/steampunk-sfdx-plugin
 ```
 
 You will be prompted to confirm that you want to install an unsigned plugin. Choose "yes"
