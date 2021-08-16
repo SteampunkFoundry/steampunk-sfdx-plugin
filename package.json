@@ -1,0 +1,44 @@
+{
+  "name": "steampunk-sfdx-plugin",
+  "description": "Steampunk's SFDX Plugin",
+  "version": "0.0.1",
+  "author": "Steampunk",
+  "bugs": "https://github.com/https://github.com/SteampunkFoundry/steampunk-sfdx-plugin/steampunk-sfdx-plugin/issues",
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/lib",
+    "/messages",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json"
+  ],
+  "homepage": "https://github.com/https://github.com/SteampunkFoundry/steampunk-sfdx-plugin/steampunk-sfdx-plugin",
+  "keywords": [
+    "sfdx-plugin"
+  ],
+  "license": "MIT",
+  "oclif": {
+    "commands": "./lib/commands",
+    "bin": "sfdx",
+    "topics": {
+      "hello": {
+        "description": "Commands to say hello."
+      }
+    },
+    "devPlugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "https://github.com/SteampunkFoundry/steampunk-sfdx-plugin/steampunk-sfdx-plugin",
+  "scripts": {
+    "lint": "tslint --project . --config tslint.json --format stylish",
+    "postpack": "rimraf oclif.manifest.json",
+    "posttest": "tslint -p test -t stylish",
+    "prepack": "rimraf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
+    "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
+    "version": "oclif-dev readme && git add README.md"
+  }
+}
