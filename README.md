@@ -2,11 +2,10 @@
 
 Utilities developed by Steampunk (@SteampunkFoundry)
 
-[![Version](https://img.shields.io/npm/v/chipp-sfdx-plugins.svg)](https://npmjs.org/package/steampunk-sfdx-plugin)
-[![Codecov](https://codecov.io/gh/ctchipps/chipp-sfdx-plugins/branch/master/graph/badge.svg)](https://codecov.io/gh/ctchipps/steampunk-sfdx-plugin)
+[![Version](https://img.shields.io/npm/v/@steampunk/steampunk-sfdx-plugin.svg)](https://www.npmjs.com/package/@steampunk/steampunk-sfdx-plugin)
 [![Known Vulnerabilities](https://snyk.io/test/github/steampunkfoundry/steampunk-sfdx-plugin/badge.svg)](https://snyk.io/test/github/steampunkfoundry/steampunk-sfdx-plugin)
-[![Downloads/week](https://img.shields.io/npm/dw/chipp-sfdx-plugins.svg)](https://npmjs.org/package/steampunk-sfdx-plugin)
-[![License](https://img.shields.io/npm/l/chipp-sfdx-plugins.svg)](https://github.com/SteampunkFoundry/steampunk-sfdx-plugin/blob/master/package.json)
+[![Downloads/week](https://img.shields.io/npm/dw/@steampunk/steampunk-sfdx-plugin.svg)](https://www.npmjs.com/package/@steampunk/steampunk-sfdx-plugin)
+[![License](https://img.shields.io/npm/l/@steampunk/steampunk-sfdx-plugin.svg)](https://www.npmjs.com/package/@steampunk/steampunk-sfdx-plugin)
 
 <!-- toc -->
 * [steampunk-sfdx-plugin](#steampunk-sfdx-plugin)
