@@ -13,8 +13,8 @@ Utilities developed by Steampunk (@SteampunkFoundry)
 * [Setup](#setup)
 * [Commands](#commands)
 <!-- tocstop -->
-<!-- install -->
 
+<!-- install -->
 ## Setup
 
 ### **Install as a SalesforceDX Plugin**
@@ -44,3 +44,38 @@ git clone https://github.com/SteampunkFoundry/steampunk-sfdx-plugin.git
 ```bash
 sfdx plugins:link .
 ```
+
+## Commands
+
+<!-- commands -->
+* [`sfdx punk:data:files:upload -p <filepath> [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`](#sfdx-punkdatafilesupload--p-filepath--u-string---apiversion-string---json---loglevel-tracedebuginfowarnerrorfataltracedebuginfowarnerrorfatal)
+
+## `sfdx punk:data:files:upload -p <filepath> [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`
+
+Upload multiple files based on a csv as standalone files or linked to records. The csv must have the following headers: Title, PathOnClient. The csv may have the following headers: FirstPublishLocationId. This utility uses the same setup as [Salesforce Dataloader for files](https://help.salesforce.com/articleView?id=000314772&type=1&mode=1).
+
+```
+USAGE
+  $ sfdx punk:data:files:upload -p <filepath> [-u <string>] [--apiversion <string>] [--json] [--loglevel 
+  trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]
+
+OPTIONS
+  -p, --pathtocsv=pathtocsv                                                         (required) path to csv
+
+  -u, --targetusername=targetusername                                               username or alias for the target
+                                                                                    org; overrides default target org
+
+  --apiversion=apiversion                                                           override the api version used for
+                                                                                    api requests made by this command
+
+  --json                                                                            format output as json
+
+  --loglevel=(trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL)  [default: warn] logging level for
+                                                                                    this command invocation
+
+EXAMPLE
+  sfdx chipp:data:files:upload -p ~/FilesToUpload.csv
+```
+
+_See code: [src/commands/punk/data/files/upload.ts](https://github.com/SteampunkFoundry/steampunk-sfdx-plugin/steampunk-sfdx-plugin/blob/v0.0.1/src/commands/punk/data/files/upload.ts)_
+<!-- commandsstop -->
